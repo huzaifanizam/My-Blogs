@@ -1,0 +1,16 @@
+.settings{
+    display: flex;
+}
+
+.settingsWrapper{
+    flex: 9;
+}
+.settingsTitle{
+
+}
+.settingsUpdateTitles{
+
+}
+.settingsDeleteTitles{
+    
+}
