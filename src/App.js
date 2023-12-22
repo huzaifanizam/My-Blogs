@@ -8,22 +8,24 @@ import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Rrgister";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route ,Navigate  } from "react-router-dom";
 import SinglePost from "./components/singlePost/SinglePost";
+import Logout from "./pages/logout/Logout";
 
 
 function App() {
-  const user = false;
+  const user = true;
   return (
     <Router>
       <TopBar />
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" exact element={user ? <Home /> : <Navigate to="/register" />} />
         <Route path="/Register" element={<Register />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Write" element={<Write />} />
-        <Route path="/Settings" element={<Settings />} />
-        <Route path="/post/:postId" element={<Single />} />
+        <Route path="/Login" element={user ?<Login />: <Navigate to="/register" />} />
+        <Route path="/Write" element={user ?<Write />: <Navigate to="/register" />} />
+        <Route path="/Settings" element={user ?<Settings />: <Navigate to="/register" />} />
+        <Route path="/post/:postId" element={user ?<Single />: <Navigate to="/register" />} />
+        <Route path="/Logout" element={user ?<Logout />: <Navigate to="/register" />} />
       </Routes>
     </Router>
   );
