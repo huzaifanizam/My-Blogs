@@ -39,13 +39,22 @@
 .sidebarList {
     list-style: none;
     margin-bottom: 30px;
+    
 }
 
 .sidebarListItem {
+    color: #222;
     display: inline-block;
     width: 50%;
     margin-top: 15px;
     cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+.sidebarListItem > Link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .sidebarSocial {

@@ -44,13 +44,16 @@ export default function topbar() {
             <Link to="/" className="Link">Home</Link>
           </li>
           <li className="topListItem">
-            <Link to="/" className="Link">ABOUT</Link>
+            <Link to="/Abouts" className="Link">ABOUT</Link>
           </li>
           <li className="topListItem">
-            <Link to="/" className="Link">CONTACT</Link>
+            <Link to="/Contacts" className="Link">CONTACT</Link>
           </li>
           <li className="topListItem">
             <Link to="/Write" className="Link">WRITE</Link>
+          </li>
+          <li className="topListItem">
+          {user && <Link to="/Settings" className="Link">UPDATE</Link>}
           </li>
           <li className="topListItem">
           {user && <Link to="/logout" className="Link">LOGOUT</Link>}

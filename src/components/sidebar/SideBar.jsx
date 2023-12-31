@@ -11,25 +11,29 @@ export default function SideBar() {
           alt=""
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          error animi.
+          I am a versatile professional with a background in both e-commerce
+          management and web development. My expertise extends to UI/UX design,
+          ensuring visually appealing and user-friendly websites. Proficient in
+          various technologies such as HTML, CSS, JavaScript, Bootstrap,
+          React.js, and Tailwind. I am also well-versed in digital marketing and
+          possess strong leadership and public speaking skills. Outside of work,
+          I enjoy playing football and indulging in book reading.
         </p>
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">CATEGGORIES</span>
         <ul className="sidebarlist">
-          <li className="sidebarListItem">Life</li>
-          <li className="sidebarListItem">Music</li>
-          <li className="sidebarListItem">Style</li>
-          <li className="sidebarListItem">Sport</li>
-          <li className="sidebarListItem">Tech</li>
-          <li className="sidebarListItem">Cinema</li>
+        <Link  rel="noopener noreferrer" className="sidebarListItem"> <li>Life</li></Link>
+        <Link  rel="noopener noreferrer" className="sidebarListItem"> <li>Music</li></Link>
+        <Link  rel="noopener noreferrer" className="sidebarListItem"> <li>Style</li></Link>
+        <Link  rel="noopener noreferrer" className="sidebarListItem"> <li>Sport</li></Link>
+        <Link  rel="noopener noreferrer" className="sidebarListItem"> <li>Tech</li></Link>
+        <Link  rel="noopener noreferrer" className="sidebarListItem"> <li>Cinema</li></Link>
         </ul>
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">FOLLOW US</span>
         <div className="sidebarSocial">
-          
           <Link
             to="https://www.facebook.com/huzaifa.nizam.3?mibextid=ZbWKwL"
             target="_blank"
