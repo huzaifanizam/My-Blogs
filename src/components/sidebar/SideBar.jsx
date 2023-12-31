@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./SideBar.css";
 
 export default function SideBar() {
@@ -15,25 +16,52 @@ export default function SideBar() {
         </p>
       </div>
       <div className="sidebarItem">
-      <span className="sidebarTitle">CATEGGORIES</span>
-      <ul className="sidebarlist">
-        <li className="sidebarListItem">Life</li>
-        <li className="sidebarListItem">Music</li>
-        <li className="sidebarListItem">Style</li>
-        <li className="sidebarListItem">Sport</li>
-        <li className="sidebarListItem">Tech</li>
-        <li className="sidebarListItem">Cinema</li>
-      </ul>
+        <span className="sidebarTitle">CATEGGORIES</span>
+        <ul className="sidebarlist">
+          <li className="sidebarListItem">Life</li>
+          <li className="sidebarListItem">Music</li>
+          <li className="sidebarListItem">Style</li>
+          <li className="sidebarListItem">Sport</li>
+          <li className="sidebarListItem">Tech</li>
+          <li className="sidebarListItem">Cinema</li>
+        </ul>
       </div>
       <div className="sidebarItem">
-      <span className="sidebarTitle">FOLLOW US</span>
-      <div className="sidebarSocial">
-        <i className="sidebarIcon fa-brands fa-square-facebook"></i>
-        <i className="sidebarIcon fa-brands fa-linkedin"></i>
-        <i className="sidebarIcon fa-brands fa-square-instagram"></i>
-        <i className="sidebarIcon fa-brands fa-github"></i>
-      </div>
+        <span className="sidebarTitle">FOLLOW US</span>
+        <div className="sidebarSocial">
+          
+          <Link
+            to="https://www.facebook.com/huzaifa.nizam.3?mibextid=ZbWKwL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="sidebarIcon fa-brands fa-square-facebook"></i>
+          </Link>
 
+          <Link
+            to="https://www.linkedin.com/in/huzaifa-nizam-741631264"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="sidebarIcon fa-brands fa-linkedin"></i>
+          </Link>
+
+          <Link
+            to="https://www.instagram.com/huzaifa_nizam?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="sidebarIcon fa-brands fa-square-instagram"></i>
+          </Link>
+
+          <Link
+            to="https://github.com/huzaifanizam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="sidebarIcon fa-brands fa-github"></i>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -6,10 +6,37 @@ export default function topbar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i className="topIcon fa-brands fa-square-facebook"></i>
-        <i className="topIcon fa-brands fa-linkedin"></i>
-        <i className="topIcon fa-brands fa-square-instagram"></i>
-        <i className="topIcon fa-brands fa-github"></i>
+      <Link
+            to="https://www.facebook.com/huzaifa.nizam.3?mibextid=ZbWKwL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="topIcon fa-brands fa-square-facebook"></i>
+          </Link>
+
+          <Link
+            to="https://www.linkedin.com/in/huzaifa-nizam-741631264"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="topIcon fa-brands fa-linkedin"></i>
+          </Link>
+
+          <Link
+            to="https://www.instagram.com/huzaifa_nizam?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="topIcon fa-brands fa-square-instagram"></i>
+          </Link>
+
+          <Link
+            to="https://github.com/huzaifanizam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="topIcon fa-brands fa-github"></i>
+          </Link>
         </div>
       <div className="topCenter">
         <ul className="topList">
